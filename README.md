@@ -1,28 +1,9 @@
-## Usage
+Introducing **NutriGoalCalc**, your ultimate companion on the journey to optimal health and nutrition. Designed with precision and care, NutriGoalCalc is more than just an app; it's your personal nutritionist, guiding you through the intricate maze of dietary needs and health goals.
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+Whether you're a healthcare professional seeking to tailor nutritional plans for patients, or an individual aiming for personal wellness, NutriGoalCalc offers a seamless interface to input vital statistics and receive comprehensive nutritional advice. With its foundation in scientific research and clinical guidelines, the app calculates ideal caloric intake, protein needs, and fluid requirements with unmatched accuracy.
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+NutriGoalCalc stands out by offering personalized recommendations based on age, weight, height, and specific health goals. Its unique feature of adjusting nutritional needs for over or underweight individuals ensures that every piece of advice is tailored to the individual's needs. 
 
-## Available Scripts
+Dive into a world where nutrition meets technology, and empower yourself with the knowledge to make informed dietary choices. Whether it's achieving a healthy weight, managing chronic conditions, or simply maintaining a balanced diet, NutriGoalCalc is your go-to tool for nutritional success.
 
-In the project directory, you can run:
-
-### `npm run dev`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-Learn more about deploying your application with the [documentations](https://vitejs.dev/guide/static-deploy.html)
+Download NutriGoalCalc today and take the first step towards a healthier, happier you. Nutrition planning has never been easier, smarter, or more intuitive. Join the NutriGoalCalc community and transform the way you think about food and health!
