@@ -4,7 +4,7 @@ import { formatNumber } from './util/util';
 
 
 function App() {
-  const [name, setName] = createSignal('');
+  const [, setName] = createSignal('');
   const [age, setAge] = createSignal('');
   const [weight, setWeight] = createSignal('');
   const [height, setHeight] = createSignal('');
@@ -42,7 +42,7 @@ function App() {
   const textWhenNotAllFilled = () => {
     return allFilled() ? "נקה" : "דוגמא"
   }
-  const [showModel, setShowModel] = createSignal(true);
+  const [showModel, setShowModel] = createSignal(false);
   const toggleModel = () => setShowModel(!showModel());
 
   return (
