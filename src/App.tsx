@@ -28,7 +28,7 @@ function App() {
     return {
       bmi: formatNumber(BMI),
       dri: {
-        calories: formatNumber(caloriesToKg * weight),
+        calories: formatNumber(caloriesToKg * (fixedBodyWeight.bodyWeight.fixWeight === 0 ? weight : fixedBodyWeight.bodyWeight.fixWeight)),
         protein: formatNumber(proteinToKg * weight),
       },
       fixedBodyWeight: fixedBodyWeight.bodyWeight.fixWeight === 0 ? "" : formatNumber(fixedBodyWeight.bodyWeight.fixWeight),
@@ -84,7 +84,7 @@ function App() {
               {compute().bmi}
               </span> ק"ג/מ"ר 
               <Show when={compute().fixedBodyWeight}>
-                (בהשמנה, תקנון משקל ל-<input type="text" onInput={e => setFixOverWeight(e.currentTarget.value)} value={compute().fixTo} class="inline-block w-16 border-b-2 border-dotted border-sky-500 text-center font-bold" /> מומלץ)
+                (בהשמנה, תקנון BMI משקל ל-<input type="text" onInput={e => setFixOverWeight(e.currentTarget.value)} value={compute().fixTo} class="inline-block w-16 border-b-2 border-dotted border-sky-500 text-center font-bold" /> מומלץ)
               </Show>
           </div>
           <div>
