@@ -84,12 +84,12 @@ function App() {
               {compute().bmi}
               </span> ק"ג/מ"ר 
               <Show when={compute().fixedBodyWeight}>
-                (בהשמנה, תקנון משקל ל-<input type="text" value={compute().fixTo} class="inline-block w-16 border-b-2 border-dotted text-center font-bold" /> מומלץ)
+                (בהשמנה, תקנון משקל ל-<input type="text" onInput={e => setFixOverWeight(e.currentTarget.value)} value={compute().fixTo} class="inline-block w-16 border-b-2 border-dotted border-sky-500 text-center font-bold" /> מומלץ)
               </Show>
           </div>
           <div>
             <p>
-              יעדים תזונתיים <Show when={compute().fixedBodyWeight}>(לפי משקל מתוקנן <input type="text" value={compute().fixedBodyWeight} class="inline-block font-bold w-16 border-b-2 border-dotted text-center" />)</Show>:
+              יעדים תזונתיים <Show when={compute().fixedBodyWeight}>(לפי משקל מתוקנן <span class="inline-block font-bold w-16 border-b-2 border-dotted text-center" >{compute().fixedBodyWeight}</span>)</Show>:
             </p>
             <p>
               אנרגיה: לפי <input 
